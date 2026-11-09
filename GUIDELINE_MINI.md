@@ -25,6 +25,6 @@
 
 | Ảnh | Tình huống | Quyết định cuối | Lý do theo schema |
 | --- | --- | --- | --- |
-| `drive_...` | | | |
+| `drive_003` |bi xe khác che mất 1 nửa xe |gán nhãn class xe van | |
 | `drive_...` | | | |
 | `drive_...` | | | |
