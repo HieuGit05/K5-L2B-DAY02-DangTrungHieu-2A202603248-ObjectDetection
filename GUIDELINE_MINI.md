@@ -25,6 +25,6 @@
 
 | Ảnh | Tình huống | Quyết định cuối | Lý do theo schema |
 | --- | --- | --- | --- |
-| `drive_003` |bi xe khác che mất 1 nửa xe |gán nhãn class xe van | |
-| `drive_...` | | | |
-| `drive_...` | | | |
+| `drive_029` |xe bus bị mất khoảng 1 ít ở đầu |gán nhãn class là bus |nhiều cửa sổ nóc cao hơn xe car và van |
+| `drive_013` |xe con bị che bởi hàng cây |gán nhãn class là car |kích thước nhỏ, chở 4 người |
+| `drive_023` |xe chỉ thấy phần thân 1 bên |gán nhãn class là bus |xe to nhiều cửa sổ |
