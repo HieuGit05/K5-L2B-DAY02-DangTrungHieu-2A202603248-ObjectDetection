@@ -119,7 +119,7 @@ Nếu train trên eval, model có thể ghi nhớ ảnh và nhãn (dễ xảy ra
 - Phân lớp nhất quán: so với gold chỉ `car` có TP; nguyên nhân chính là khác quy ước ID lớp (mục 4), chưa được giảng viên xác nhận.
 - Mini guideline: có định nghĩa bốn lớp, quy tắc box và ba ca mơ hồ có lý do.
 - Gold QC: chưa đạt (F1 0.5765 < 0.80; mean IoU đạt); chưa có vòng rework.
-- Pipeline YOLO và phân tích: Colab đã chạy, không dùng eval để train, có metrics và trả lời bốn câu hỏi. [Cần bổ sung: đặt `assets/eval_predictions/` và `assets/yolo26_runs/` vào repo]
+- Pipeline YOLO và phân tích: Colab đã chạy, không dùng eval để train, có metrics và trả lời bốn câu hỏi.
 - Chưa kiểm được: danh sách 10 ảnh rà bằng mắt, phản hồi của giảng viên về ID lớp.
 
 ## 8. Công cụ AI và tài liệu tham khảo
