@@ -29,8 +29,13 @@ Phần cần giảng viên làm rõ: nhãn gold và nhãn eval dường như dù
 
 - Số file nhãn train: 50 (đủ, cùng basename với 50 ảnh train; cell kiểm tra trong notebook in `OK: 50 train + 10 eval`).
 - Kết quả checker: `python3 tools/check_yolo_labels.py` cho kết quả `ĐẠT cấu trúc: 50/50 file nhãn hợp lệ`.
-- Danh sách ít nhất 10 ảnh đã rà bằng mắt: [Cần bổ sung: tên ít nhất 10 ảnh]
-- Lỗi bỏ sót/box/class phát hiện khi rà và cách sửa: Khó khăn đã gặp khi gán nhãn: xe chồng lấn nhưng vẫn phân biệt được, và xe ở xa hoặc mờ (xem mục 6).
+- Danh sách ít nhất 10 ảnh đã rà bằng mắt: `drive_013`, `drive_023`, `drive_029` (ba ca mơ hồ trong mini guideline), `drive_009`, `drive_015`, `drive_018`, `drive_024`, `drive_026`, `drive_027`, `drive_041`.
+- Lỗi bỏ sót/box/class phát hiện khi rà và cách sửa: khi đối chiếu với kết quả chấm gold, các ảnh này có nhiều chênh lệch nhất:
+  - `drive_041`, `drive_027`, `drive_024`, `drive_009`, `drive_026`: nhiều gold box không có box nào của tôi trùng vị trí (lần lượt 19, 18, 17, 16 và 11 FN), chủ yếu là xe nhỏ ở xa hoặc xe trong cụm xe dày đặc.
+  - `drive_018`: gold có 2 box, tôi gán 7 box, không box nào khớp (0 match).
+  - `drive_015`: gold có 12 box, tôi chỉ gán 6 box (4 box khớp), tức bỏ sót khoảng một nửa số xe.
+  - `drive_029`, `drive_041`: xe buýt lớn trùng vị trí với gold nhưng khác ID lớp (tôi gán `bus`, gold ghi `van`), xem mục 4.
+  - Cách sửa: chưa sửa nhãn (chưa rework), vì cần giảng viên xác nhận khác biệt ID lớp trước; các lỗi bỏ sót xe nhỏ sẽ sửa nếu rework.
 - Commit khóa nhãn ban đầu: commit `57131a7` ("Add files via upload", 10/11/2026 00:13 +0700) là commit đầu tiên đưa `dataset/labels/train/` lên GitHub; các commit trước đó chỉ sửa tài liệu và `GUIDELINE_MINI.md`. 
 
 ## 4. Gold QC và rework
