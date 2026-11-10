@@ -28,9 +28,9 @@ Phần cần giảng viên làm rõ: nhãn gold và nhãn eval dường như dù
 ## 3. Annotation và self-QC
 
 - Số file nhãn train: 50 (đủ, cùng basename với 50 ảnh train; cell kiểm tra trong notebook in `OK: 50 train + 10 eval`).
-- Kết quả checker: `python3 tools/check_yolo_labels.py` cho kết quả `ĐẠT cấu trúc: 50/50 file nhãn hợp lệ`. Lỗi đã xử lý: [Cần bổ sung: các lỗi định dạng đã gặp và cách sửa, nếu có]
+- Kết quả checker: `python3 tools/check_yolo_labels.py` cho kết quả `ĐẠT cấu trúc: 50/50 file nhãn hợp lệ`.
 - Danh sách ít nhất 10 ảnh đã rà bằng mắt: [Cần bổ sung: tên ít nhất 10 ảnh]
-- Lỗi bỏ sót/box/class phát hiện khi rà và cách sửa: [Cần bổ sung]. Khó khăn đã gặp khi gán nhãn: xe chồng lấn nhưng vẫn phân biệt được, và xe ở xa hoặc mờ (xem mục 6).
+- Lỗi bỏ sót/box/class phát hiện khi rà và cách sửa: Khó khăn đã gặp khi gán nhãn: xe chồng lấn nhưng vẫn phân biệt được, và xe ở xa hoặc mờ (xem mục 6).
 - Commit khóa nhãn ban đầu: commit `57131a7` ("Add files via upload", 10/11/2026 00:13 +0700) là commit đầu tiên đưa `dataset/labels/train/` lên GitHub; các commit trước đó chỉ sửa tài liệu và `GUIDELINE_MINI.md`. 
 
 ## 4. Gold QC và rework
